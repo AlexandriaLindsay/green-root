@@ -1,0 +1,194 @@
+/*******************************************
+* IMPORTS
+*******************************************/
+@import "tailwindcss";
+
+
+/*******************************************
+* THEME STYLES
+*******************************************/
+
+@theme {
+    --color-brand-primary: #303841;
+    --color-brand-secondary: #FF5722;
+    --color-brand-grey: #4D4D4D;
+    --color-brand-silver: #F5F5FA;
+}
+
+
+/******************************************
+* ANIMATIONS
+******************************************/
+@keyframes flipUp {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) translateY(0);
+  }
+}
+
+.animate-flip-up {
+  animation: flipUp .7s ease-out forwards;
+}
+
+/*******************************************
+* BASE STYLES
+*******************************************/
+@layer base {
+
+    h1 {
+        @apply text-[3rem] md:text-[5rem] font-bold text-brand-primary tracking-tighter leading-[3rem] md:leading-[4.8rem] mb-11;
+    }
+
+    h2 {
+        @apply text-3xl md:text-4xl text-brand-grey font-bold tracking-tighter mb-2;
+    }
+
+    h3 {
+        @apply text-xl text-brand-grey font-bold tracking-tight mb-2 leading-6;
+    }
+
+    h4:not(footer h4) {
+      @apply text-lg text-brand-grey font-bold tracking-tight mb-2 leading-6;
+    }
+
+    p,a {
+        @apply text-[1.1rem];
+    }
+
+    p {
+        @apply mb-6;
+    }
+
+    ul:not(footer ul):not(header ul) {
+      @apply
+      list-inside
+      list-disc mb-4;
+    }
+
+    a:not(.btn):not(nav a):not(footer a) {
+      @apply text-brand-primary transition duration-300 font-bold underline hover:text-brand-secondary;
+    }
+
+    ol {
+      @apply
+      list-inside
+      list-decimal mb-4;
+    }
+
+    nav li:not(:last-child) a {
+        @apply text-brand-primary relative font-bold;
+    }
+
+    nav li:not(:last-child) > a::before,
+    footer li a::before {
+        content: '';
+        @apply absolute bottom-4 left-0 w-full h-0.5 bg-brand-secondary rounded-full;
+        transform: scaleX(0) translateY(1.3rem);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+        pointer-events: none;
+    }
+
+    footer li {
+      @apply leading-5 md:leading-8;
+    }
+
+    footer li a {
+      @apply relative text-[#ededed];
+    }
+
+      nav li:last-of-type {
+        @apply !p-0;
+    }
+  
+    nav li:last-of-type a {
+        @apply 
+        transition
+        duration-300 
+        !text-brand-secondary 
+        hover:!text-white font-medium
+        hover:bg-brand-secondary
+        border border-brand-secondary
+        rounded-sm
+        px-4 py-2;
+    }
+      
+
+    nav li:not(:last-child) a:hover::before,
+    footer li a:hover::before {
+        transform: scaleX(1) translateY(1.3rem);
+    }
+
+    nav ul {
+        @apply flex gap-x-12 items-center;
+    }
+
+    .btn {
+        @apply 
+        bg-transparent 
+        rounded-sm 
+        transition 
+        !text-brand-secondary
+        font-medium
+        duration-300 
+        hover:bg-brand-secondary 
+        hover:!text-white
+        border border-brand-secondary
+        px-4 py-2;
+    }
+
+    .sub-header nav ul li a {
+      @apply text-white;
+    }
+
+    nav {
+      @apply transition duration-300;
+    }
+}
+
+  nav.active {
+    @apply bg-brand-secondary;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 1;
+    
+  }
+
+  nav.active li a {
+    @apply text-white text-3xl leading-4 hover:text-brand-primary transition duration-300;
+    
+  }
+
+  nav.active ul {
+    @apply items-baseline py-20 px-12 leading-8;
+    
+  }
+
+  #nav-toggle.active {
+    @apply text-white z-20;
+  }
+
+
+/***********************************************
+* HOME PAGE
+***********************************************/
+
+
+/***********************************************
+* FOOTER
+***********************************************/
+footer h4 {
+  @apply text-xl mb-3;
+}
+
+
+/***********************************************
+* MEDIA QUERIES
+***********************************************/
