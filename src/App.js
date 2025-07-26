@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Header } from './components/Header.js';
 import { Footer } from './components/Footer.js';
 import Home from './views/Home.js';

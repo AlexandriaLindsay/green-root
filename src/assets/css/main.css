@@ -12,6 +12,7 @@
     --color-brand-primary: #252525;
     --color-brand-secondary: #FFB706;
     --color-brand-grey: #F2F2F2;
+    --color-brand-light-grey: #828282;
     --font-heading: "Montserrat", sans-serif;
     --font-paragraph: "Inter", sans-serif;
 }
@@ -54,11 +55,22 @@
     }
 
     h2 {
-        @apply text-3xl md:text-4xl text-brand-primary font-heading font-extrabold tracking-tighter mb-2;
+        @apply 
+        text-[4rem] 
+        text-brand-primary 
+        font-heading 
+        font-extrabold 
+        uppercase
+        tracking-[0.1rem]
+        border-l-[.6rem]
+        border-brand-primary
+        pl-[2rem] 
+        leading-[4.5rem]
+        mb-12;
     }
 
     h3 {
-        @apply text-xl text-brand-grey font-extrabold font-heading tracking-tight mb-2 leading-6;
+        @apply text-xl text-brand-primary font-medium font-heading tracking-tight mb-2 leading-6;
     }
 
     h4:not(footer h4) {
@@ -66,7 +78,7 @@
     }
 
     p,a {
-        @apply text-[1.1rem] font-paragraph;
+        @apply text-[1.1rem] font-paragraph text-brand-light-grey font-paragraph;
     }
 
     p {
@@ -86,7 +98,13 @@
     ol {
       @apply
       list-inside
-      list-decimal mb-4;
+      list-decimal mb-4 pl-[2.7rem];
+    }
+
+    li {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 3rem;
     }
 
     nav li:not(:last-child) a {
@@ -186,6 +204,14 @@
   }
 
 
+  .accent::before {
+    content: "";
+    background-color: var(--color-brand-primary);
+    width: 2.5rem;
+    height: .3rem;
+    display: block;
+    margin-bottom: .7rem;
+  }
 /***********************************************
 * HOME PAGE
 ***********************************************/

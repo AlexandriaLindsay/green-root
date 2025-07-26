@@ -9,7 +9,7 @@ export function Header() {
 
   return (
 
-    <header>
+    <header className='max-w-[100rem] mx-auto'>
         <div className="flex justify-between items-center py-4 px-[4rem]">
             <Link to="/">
                 <img className="w-56 h-auto" src={Logo} alt="Green Root Logo" />
