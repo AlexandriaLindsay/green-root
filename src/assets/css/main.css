@@ -2,7 +2,7 @@
 * IMPORTS
 *******************************************/
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*******************************************
 * THEME STYLES
@@ -12,6 +12,8 @@
     --color-brand-primary: #252525;
     --color-brand-secondary: #FFB706;
     --color-brand-grey: #F2F2F2;
+    --font-heading: "Montserrat", sans-serif;
+    --font-paragraph: "Inter", sans-serif;
 }
 
 
@@ -39,23 +41,32 @@
 @layer base {
 
     h1 {
-        @apply text-[3rem] md:text-[5rem] font-bold text-brand-primary tracking-tighter leading-[3rem] md:leading-[4.8rem] mb-11;
+        @apply text-[3rem] 
+        md:text-[5rem] 
+        font-extrabold 
+        text-brand-primary 
+        font-heading 
+        tracking-[0.2rem] 
+        leading-[3rem] 
+        md:leading-[4.8rem] 
+        uppercase
+        mb-11;
     }
 
     h2 {
-        @apply text-3xl md:text-4xl text-brand-grey font-bold tracking-tighter mb-2;
+        @apply text-3xl md:text-4xl text-brand-primary font-heading font-extrabold tracking-tighter mb-2;
     }
 
     h3 {
-        @apply text-xl text-brand-grey font-bold tracking-tight mb-2 leading-6;
+        @apply text-xl text-brand-grey font-extrabold font-heading tracking-tight mb-2 leading-6;
     }
 
     h4:not(footer h4) {
-      @apply text-lg text-brand-grey font-bold tracking-tight mb-2 leading-6;
+      @apply text-lg text-brand-grey font-extrabold font-heading tracking-tight mb-2 leading-6;
     }
 
     p,a {
-        @apply text-[1.1rem];
+        @apply text-[1.1rem] font-paragraph;
     }
 
     p {
@@ -179,6 +190,24 @@
 * HOME PAGE
 ***********************************************/
 
+.heading-text span:first-of-type {
+  @apply text-[4.3rem];
+}
+
+.heading-text span:nth-of-type(2) {
+  @apply 
+  text-[10.25rem]
+  -ml-[0.46rem]
+  mt-[1.7rem]
+  block;
+}
+
+.banner-img img {
+  @apply
+  w-full
+  translate-y-[11rem]
+  translate-x-[9rem];
+}
 
 /***********************************************
 * FOOTER
