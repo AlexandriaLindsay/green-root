@@ -9,6 +9,8 @@ import broccoli from '../assets/img/broccoli.png';
 import pear from '../assets/img/pear.png';
 import nuts from '../assets/img/nuts.png';
 import veggies from '../assets/img/veggies.png';
+import eggBowl from '../assets/img/egg-bowl.png';
+import veggiesOnBoard from '../assets/img/veggies-on-wood.jpg';
 
 export default function Home() {
   return (
@@ -70,28 +72,65 @@ export default function Home() {
       </div>
 
 
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-7xl mx-auto py-32'>
         <div className='flex'>
           <div className='flex-1'>
             <h2>A New Kind of Super Food</h2>
             <ol>
               <li>
                 <strong>Food For Life</strong>
-                <p>Body text for whatever you’d like to expand on the main point.</p>
+                <p>Body text for whatever you'd like to expand on the main point.</p>
               </li>
               <li>
                 <strong>Food For Life</strong>
-                <p>Body text for whatever you’d like to expand on the main point.</p>
+                <p>Body text for whatever you'd like to expand on the main point.</p>
               </li>
               <li>
                 <strong>Food For Life</strong>
-                <p>Body text for whatever you’d like to expand on the main point.</p>
+                <p>Body text for whatever you'd like to expand on the main point.</p>
               </li>
             </ol>
             <Link className='btn' to='/'>Explore our Meals</Link>
           </div>
           <div className='flex-1'>
             <img className='w-full' src={veggies} alt='Veggies'/>
+          </div>
+        </div>
+      </div>
+
+
+      <div className='meals relative bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url("${veggiesOnBoard}")` }}>
+        <div className='overlay absolute top-0 left-0 bottom-0 right-0 opacity-80 bg-brand-primary'></div>
+        <div className='max-w-7xl mx-auto relative z-1'>
+          <div className='flex'>
+
+            <div className='flex-1 glass-card'>
+              <svg class="card-top-curve" viewBox="0 0 300 50" preserveAspectRatio="none">
+                <path d="M0,50 Q150,0 300,50 L300,0 L0,0 Z" fill="rgba(255,255,255,0.1)" />
+              </svg>
+              <img src={eggBowl} alt='Egg Bowl' />
+              <h3>Protein Bowl</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <span>359 Cal.</span>
+              <button><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+            <div className='flex-1 glass-card'>
+              <img src={eggBowl} alt='Egg Bowl' />
+              <h3>Protein Bowl</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <span>359 Cal.</span>
+              <button><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+            <div className='flex-1 glass-card'>
+              <img src={eggBowl} alt='Egg Bowl' />
+              <h3>Protein Bowl</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <span>359 Cal.</span>
+              <button><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
           </div>
         </div>
       </div>
