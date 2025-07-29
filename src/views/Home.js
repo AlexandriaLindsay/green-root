@@ -11,6 +11,7 @@ import nuts from '../assets/img/nuts.png';
 import veggies from '../assets/img/veggies.png';
 import eggBowl from '../assets/img/egg-bowl.png';
 import veggiesOnBoard from '../assets/img/veggies-on-wood.jpg';
+import glassBg from '../assets/img/glass-bg.svg';
 
 export default function Home() {
   return (
@@ -102,17 +103,15 @@ export default function Home() {
       <div className='meals relative bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url("${veggiesOnBoard}")` }}>
         <div className='overlay absolute top-0 left-0 bottom-0 right-0 opacity-80 bg-brand-primary'></div>
         <div className='max-w-7xl mx-auto relative z-1'>
-          <div className='flex'>
+          <div className='flex gap-6'>
 
-            <div className='flex-1 glass-card'>
-              <svg class="card-top-curve" viewBox="0 0 300 50" preserveAspectRatio="none">
-                <path d="M0,50 Q150,0 300,50 L300,0 L0,0 Z" fill="rgba(255,255,255,0.1)" />
-              </svg>
+            <div className='flex-1 glass-card relative overflow-hidden'>
+              <img className='absolute top-0 left-0 w-full h-full object-cover' src={glassBg} alt='Glass Card' />
               <img src={eggBowl} alt='Egg Bowl' />
               <h3>Protein Bowl</h3>
               <p>Lorem ipsum dolor sit amet, consectetur.</p>
               <span>359 Cal.</span>
-              <button><i class="fa-solid fa-cart-shopping"></i></button>
+              <button><i className="fa-solid fa-cart-shopping"></i></button>
             </div>
 
             <div className='flex-1 glass-card'>
@@ -120,7 +119,7 @@ export default function Home() {
               <h3>Protein Bowl</h3>
               <p>Lorem ipsum dolor sit amet, consectetur.</p>
               <span>359 Cal.</span>
-              <button><i class="fa-solid fa-cart-shopping"></i></button>
+              <button><i className="fa-solid fa-cart-shopping"></i></button>
             </div>
 
             <div className='flex-1 glass-card'>
@@ -128,7 +127,7 @@ export default function Home() {
               <h3>Protein Bowl</h3>
               <p>Lorem ipsum dolor sit amet, consectetur.</p>
               <span>359 Cal.</span>
-              <button><i class="fa-solid fa-cart-shopping"></i></button>
+              <button><i className="fa-solid fa-cart-shopping"></i></button>
             </div>
 
           </div>
