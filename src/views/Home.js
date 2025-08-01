@@ -102,27 +102,32 @@ export default function Home() {
 
       <div className='meals relative bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url("${veggiesOnBoard}")` }}>
         <div className='overlay absolute top-0 left-0 bottom-0 right-0 opacity-80 bg-brand-primary'></div>
-        <div className='max-w-7xl mx-auto relative z-1'>
+        <div className='max-w-7xl mx-auto relative z-1 py-16'>
+
+          <div className='text-center mb-24'>
+            <h2 className='text-white p-0 m-0 border-0 mb-4 text-[2.6rem]'>Meals To Go</h2>
+            <p className='text-[#CFCFCF] w-xl mx-auto p-0'>Body text for whatever you'd like to expand on the main point Body text for whatever you'd like to expand.</p>
+          </div>
+
           <div className='flex gap-6'>
-
             <div className='flex-1 glass-card relative overflow-hidden'>
-              <img className='absolute top-0 left-0 w-full h-full object-cover' src={glassBg} alt='Glass Card' />
+              <img className='absolute top-0 left-0 w-full h-full object-contain' src={glassBg} alt='Glass Card' />
               <img src={eggBowl} alt='Egg Bowl' />
               <h3>Protein Bowl</h3>
               <p>Lorem ipsum dolor sit amet, consectetur.</p>
               <span>359 Cal.</span>
               <button><i className="fa-solid fa-cart-shopping"></i></button>
             </div>
-
-            <div className='flex-1 glass-card'>
+            <div className='flex-1 glass-card relative overflow-hidden'>
+              <img className='absolute top-0 left-0 w-full h-full object-contain' src={glassBg} alt='Glass Card' />
               <img src={eggBowl} alt='Egg Bowl' />
               <h3>Protein Bowl</h3>
               <p>Lorem ipsum dolor sit amet, consectetur.</p>
               <span>359 Cal.</span>
               <button><i className="fa-solid fa-cart-shopping"></i></button>
             </div>
-
-            <div className='flex-1 glass-card'>
+            <div className='flex-1 glass-card relative overflow-hidden'>
+              <img className='absolute top-0 left-0 w-full h-full object-contain' src={glassBg} alt='Glass Card' />
               <img src={eggBowl} alt='Egg Bowl' />
               <h3>Protein Bowl</h3>
               <p>Lorem ipsum dolor sit amet, consectetur.</p>
