@@ -236,8 +236,9 @@
 }
 
 .glass-card {
-  padding: 45px 42px;
+  padding: 33px 42px;
   backdrop-filter: blur(.4rem);
+  border-radius: 5rem
 }
 
 .glass-card h3 {
@@ -255,6 +256,14 @@
 
 .glass-card span {
   @apply text-[2rem];
+}
+
+.glass-card button {
+    border: 1px solid white;
+    padding: 7px 11px;
+    border-radius: 7px;
+    float: right;
+    margin-top: 9px;
 }
 
 /***********************************************

@@ -10,8 +10,11 @@ import pear from '../assets/img/pear.png';
 import nuts from '../assets/img/nuts.png';
 import veggies from '../assets/img/veggies.png';
 import eggBowl from '../assets/img/egg-bowl.png';
+import proteinBowl from '../assets/img/protein-bowl.png';
+import salmonBowl from '../assets/img/salmon-bowl.png';
 import veggiesOnBoard from '../assets/img/veggies-on-wood.jpg';
 import glassBg from '../assets/img/glass-bg.svg';
+import flyingVeg from '../assets/img/flyying-veg.png';
 
 export default function Home() {
   return (
@@ -102,7 +105,7 @@ export default function Home() {
 
       <div className='meals relative bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url("${veggiesOnBoard}")` }}>
         <div className='overlay absolute top-0 left-0 bottom-0 right-0 opacity-80 bg-brand-primary'></div>
-        <div className='max-w-7xl mx-auto relative z-1 py-16'>
+        <div className='max-w-7xl mx-auto relative z-1 py-16 px-12'>
 
           <div className='text-center mb-24'>
             <h2 className='text-white p-0 m-0 border-0 mb-4 text-[2.6rem]'>Meals To Go</h2>
@@ -112,7 +115,7 @@ export default function Home() {
           <div className='flex gap-6'>
             <div className='flex-1 glass-card relative overflow-hidden'>
               <img className='absolute top-0 left-0 w-full h-full object-contain' src={glassBg} alt='Glass Card' />
-              <img src={eggBowl} alt='Egg Bowl' />
+              <img className='w-[16rem] mx-auto' src={eggBowl} alt='Egg Bowl' />
               <h3>Protein Bowl</h3>
               <p>Lorem ipsum dolor sit amet, consectetur.</p>
               <span>359 Cal.</span>
@@ -120,7 +123,7 @@ export default function Home() {
             </div>
             <div className='flex-1 glass-card relative overflow-hidden'>
               <img className='absolute top-0 left-0 w-full h-full object-contain' src={glassBg} alt='Glass Card' />
-              <img src={eggBowl} alt='Egg Bowl' />
+              <img className='w-[16rem] mx-auto mt-10' src={salmonBowl} alt='Salmon Bowl' />
               <h3>Protein Bowl</h3>
               <p>Lorem ipsum dolor sit amet, consectetur.</p>
               <span>359 Cal.</span>
@@ -128,13 +131,24 @@ export default function Home() {
             </div>
             <div className='flex-1 glass-card relative overflow-hidden'>
               <img className='absolute top-0 left-0 w-full h-full object-contain' src={glassBg} alt='Glass Card' />
-              <img src={eggBowl} alt='Egg Bowl' />
+              <img className='w-[15rem] mx-auto mt-4' src={proteinBowl} alt='Protein Bowl' />
               <h3>Protein Bowl</h3>
               <p>Lorem ipsum dolor sit amet, consectetur.</p>
               <span>359 Cal.</span>
               <button><i className="fa-solid fa-cart-shopping"></i></button>
             </div>
 
+          </div>
+        </div>
+      </div>
+
+      <div className='order-form relative'>
+        <img className='absolute top-0 left-0' src={flyingVeg} alt='Bunch of Veggies' />
+        <div className='flex'>
+          <div className='flex-1'></div>
+          <div className='flex-1'>
+            <h2>Order Today!</h2>
+            <p>Body text for whatever you'd like to expand on the main point Body text for whatever you'd like to expand.</p>
           </div>
         </div>
       </div>
