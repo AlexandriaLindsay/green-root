@@ -15,6 +15,7 @@ import salmonBowl from '../assets/img/salmon-bowl.png';
 import veggiesOnBoard from '../assets/img/veggies-on-wood.jpg';
 import glassBg from '../assets/img/glass-bg.svg';
 import flyingVeg from '../assets/img/flyying-veg.png';
+import customer from '../assets/img/happy-customer.jpg';
 
 export default function Home() {
   return (
@@ -103,7 +104,7 @@ export default function Home() {
       </div>
 
 
-      <div className='meals relative bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url("${veggiesOnBoard}")` }}>
+      <div className='meals relative bg-cover bg-center bg-no-repeat pb-2' style={{ backgroundImage: `url("${veggiesOnBoard}")` }}>
         <div className='overlay absolute top-0 left-0 bottom-0 right-0 opacity-80 bg-brand-primary'></div>
         <div className='max-w-7xl mx-auto relative z-1 py-16 px-12'>
 
@@ -137,18 +138,57 @@ export default function Home() {
               <span>359 Cal.</span>
               <button><i className="fa-solid fa-cart-shopping"></i></button>
             </div>
-
+          </div>
+          <div className='text-center mt-16'>
+            <Link className='btn bg-brand-secondary text-brand-primary hover:bg-brand-primary hover:text-white' to='/'>Order Today!</Link>
           </div>
         </div>
       </div>
 
       <div className='order-form relative'>
-        <img className='absolute top-0 left-0' src={flyingVeg} alt='Bunch of Veggies' />
+        <img className='absolute -top-51 left-0' src={flyingVeg} alt='Bunch of Veggies' />
+        <div className='max-w-[69rem] mx-auto relative'>
+          <div className='flex'>
+            <div className='flex-1'></div>
+            <div className='flex-[59%]'>
+              <h2>Order Today!</h2>
+              <p>Body text for whatever you'd like to expand on the main point Body text for whatever you'd like to expand.</p>
+              <form>
+                <label for='first-name'>
+                  First Name
+                  <input type='text' name='first-name' id='first-name' placeholder='First Name' required/>
+                </label>
+
+                <label for='last-name'>
+                  Last Name
+                  <input type='text' name='last-name' id='last-name' placeholder='Last Name' required/>
+                </label>
+
+                <label for='email'>
+                  Email
+                  <input type='email' name='email' id='email' placeholder='Email' required/>
+                </label>
+
+                <label for='message'>
+                  Message
+                  <textarea name='message' id='message' placeholder='Message' required></textarea>
+                </label>
+                <input className='btn hover:cursor-pointer py-2 rounded' type='submit' value='Submit' id='submit'/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='testimonials max-w-[69rem] mx-auto'>
         <div className='flex'>
-          <div className='flex-1'></div>
           <div className='flex-1'>
-            <h2>Order Today!</h2>
-            <p>Body text for whatever you'd like to expand on the main point Body text for whatever you'd like to expand.</p>
+            <img src={customer} alt='Happy Customer'/>
+          </div>
+          <div className='flex-[35%]'>
+            <h2>Our Happy Customers</h2>
+            <p>Laborum quasi distinctio est et. Sequi omnis molestiae. Officia occaecati voluptatem accusantium. Et corrupti saepe quam.</p>
+            <p>Patricia O'Keefe</p>
           </div>
         </div>
       </div>
