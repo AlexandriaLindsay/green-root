@@ -303,6 +303,19 @@ form label {
 
 .testimonials h2 {
   border: none;
+  font-size: 3rem;
+  padding: 0;
+  letter-spacing: 0px;
+  margin-bottom: 21px;
+}
+
+.testimonials {
+  box-shadow: 12px 8px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+}
+
+.testimonials p {
+  font-size: 1.3rem;
 }
 
 /***********************************************

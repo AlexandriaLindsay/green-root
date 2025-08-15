@@ -180,12 +180,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='testimonials max-w-[69rem] mx-auto'>
-        <div className='flex'>
+      <div className='testimonials max-w-[69rem] mx-auto mb-8'>
+        <div className='flex items-center'>
           <div className='flex-1'>
-            <img src={customer} alt='Happy Customer'/>
+            <img className='rounded-bl-[23px]' src={customer} alt='Happy Customer'/>
           </div>
-          <div className='flex-[35%]'>
+          <div className='flex-[35%] pl-4'>
             <h2>Our Happy Customers</h2>
             <p>Laborum quasi distinctio est et. Sequi omnis molestiae. Officia occaecati voluptatem accusantium. Et corrupti saepe quam.</p>
             <p>Patricia O'Keefe</p>
