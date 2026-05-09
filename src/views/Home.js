@@ -25,10 +25,9 @@ export default function Home() {
 
           <div className='px-6 banner-text relative translate-y-[6rem]'>
             <div className='absolute -left-[19rem] rotate-90 w-[25rem] top-[8.2rem] border-l-[8px] border-brand-primary pl-8'>
-              <h3 className='font-extrabold uppercase tracking-[.1rem]'>Welcome To</h3>
-              <p className='text-brand-primary'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Faucibus in libero  risus risus risus risus.  risus risus 
-                risus risus risus risus risus.
+              <h3 className='font-extrabold uppercase tracking-[.1rem]'>Welcome To Whole Root</h3>
+              <p className='text-brand-primary'>
+                Easy meals that are whole food based and fuel your body for results.
               </p>
             </div>
 
@@ -64,8 +63,8 @@ export default function Home() {
           </div>
 
           <div className='flex-[40%] pl-18 translate-y-[8.5rem]'>
-            <h3 className='accent'>Chef ABC</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper.</p>
+            <h3 className='accent'>Simple. Easy. Whole Foods.</h3>
+            <p>Eating healthy doesn't have to be so complicated. View our meals to get started on becoming a better you.</p>
             <div className='flex gap-4'>
               <div className='flex-1'><img className='w-full' src={tomato} alt='Tomato'/></div>
               <div className='flex-1'><img className='w-full' src={broccoli} alt='Broccoli'/></div>
@@ -83,16 +82,16 @@ export default function Home() {
             <h2>A New Kind of Super Food</h2>
             <ol>
               <li>
-                <strong>Food For Life</strong>
-                <p>Body text for whatever you'd like to expand on the main point.</p>
+                <strong>Non-Processed</strong>
+                <p>All our meals are non-processed and uses simple everyday ingredients.</p>
               </li>
               <li>
-                <strong>Food For Life</strong>
-                <p>Body text for whatever you'd like to expand on the main point.</p>
+                <strong>Refined Sugar-Free</strong>
+                <p>Sugar ages our DNA. Our meals our designed to eliminate those blood sugar spikes.</p>
               </li>
               <li>
-                <strong>Food For Life</strong>
-                <p>Body text for whatever you'd like to expand on the main point.</p>
+                <strong>Fuel Your Body</strong>
+                <p>Whole foods makes healthy eating easier and eliminates the needs for complicated recipes.</p>
               </li>
             </ol>
             <Link className='btn' to='/'>Explore our Meals</Link>
@@ -109,8 +108,8 @@ export default function Home() {
         <div className='max-w-7xl mx-auto relative z-1 py-16 px-12'>
 
           <div className='text-center mb-24'>
-            <h2 className='text-white p-0 m-0 border-0 mb-4 text-[2.6rem]'>Meals To Go</h2>
-            <p className='text-[#CFCFCF] w-xl mx-auto p-0'>Body text for whatever you'd like to expand on the main point Body text for whatever you'd like to expand.</p>
+            <h2 className='text-white p-0 m-0 border-0 mb-4 text-[2.6rem]'>Our Wholefood Meals</h2>
+            <p className='text-[#CFCFCF] w-xl mx-auto p-0'>Each recipe is crafted specically to fuel you body with high-protein, nutrient densed meals that are simple and meet our body's needs.</p>
           </div>
 
           <div className='flex gap-6'>
@@ -151,8 +150,8 @@ export default function Home() {
           <div className='flex'>
             <div className='flex-1'></div>
             <div className='flex-[59%]'>
-              <h2>Order Today!</h2>
-              <p>Body text for whatever you'd like to expand on the main point Body text for whatever you'd like to expand.</p>
+              <h2>Subscribe Today To Get easy meals delivered to your mailbox!</h2>
+              <p>Each month we craft meals specically to the climate of Canadians. Winter time we need more vitamin D as we don't get enough so each recipe is dialed in based on what your body needs for the season.</p>
               <form>
                 <label for='first-name'>
                   First Name
@@ -186,8 +185,8 @@ export default function Home() {
             <img className='rounded-bl-[23px]' src={customer} alt='Happy Customer'/>
           </div>
           <div className='flex-[35%] pl-4'>
-            <h2>Our Happy Customers</h2>
-            <p>Laborum quasi distinctio est et. Sequi omnis molestiae. Officia occaecati voluptatem accusantium. Et corrupti saepe quam.</p>
+            <h2>Hi, My Name is Alexandria</h2>
+            <p>I create simple recipes that are designed to fuel our body, nothing fancy. Just real whole foods, designed for real purpose.</p>
             <p>Patricia O'Keefe</p>
           </div>
         </div>
